@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.currencyquoteapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.currencyquoteapp"
         minSdk = 26
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -48,4 +48,10 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    //Retrofit:
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    //Retrofit (Converter):
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
 }
